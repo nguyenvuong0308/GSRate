@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/fb_bg_feedback"
     android:orientation="vertical"
-    android:paddingBottom="30dp">
+    android:paddingBottom="@dimen/fb_padding_bottom_feedback">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/actionBar"
