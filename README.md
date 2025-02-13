@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 **Step 2.** Add the dependency
 ```css
 dependencies {
-	        implementation 'com.github.nguyenvuong0308:GSrate:1.1.3'
+	        implementation 'com.github.nguyenvuong0308:GSrate:1.1.4'
 	}
 ```
 **Requirement:**
