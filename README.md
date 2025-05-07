@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 **Step 2.** Add the dependency
 ```css
 dependencies {
-	        implementation 'com.github.nguyenvuong0308:GSrate:1.1.5'
+	        implementation 'com.github.nguyenvuong0308:GSrate:1.1.6'
 	}
 ```
 **Requirement:**
@@ -140,6 +140,9 @@ Custom lại style cho icon nếu icon dài:
 - Show text *loại* ở màn feedback
 
 > fb_show_text_type_in_feedback = true
+
+4. Padding bottom feedback screen
+> fb_padding_bottom_feedback
 
 **Dialog Thanks**
 - icon nút thanks, có thể custom lại imageView bằng style LogoThanks
