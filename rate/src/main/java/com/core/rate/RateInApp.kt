@@ -117,6 +117,8 @@ class RateInApp {
         alwaysIgnore()
     }
 
+
+
     // Call this method in onCreate() of Activity
     private fun registerForFeedback(activity: ComponentActivity) {
         intentActivity[activity.hashCode()] = activity.registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
@@ -124,7 +126,7 @@ class RateInApp {
         }
     }
 
-    private fun showActivityFeedback(context: Context, onResult: (ActivityResult) -> Unit) {
+    fun showActivityFeedback(context: Context, onResult: (ActivityResult) -> Unit) {
         this.onResult = onResult
         startActivityIntent?.launch(Intent(context, FeedbackActivity::class.java))
     }
