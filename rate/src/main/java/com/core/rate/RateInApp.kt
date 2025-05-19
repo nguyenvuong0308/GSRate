@@ -85,7 +85,8 @@ class RateInApp {
         alwaysIgnore: () -> Unit = {}, // Mỗi lần show dialog rate đều gọi hàm này
         inAppReview: Boolean = false, // Bật in-app review
         onShowThanks: () -> Boolean = { false }, // return true nếu muốn tự xử lý rate( show in-app review hoặc nhảy sang play store), mặc định sẽ nhảy sang play store
-        forceShow: Boolean = false
+        forceShow: Boolean = false,
+        withOutAnimation: Boolean = false
     ) {
         if (!isInternetAvailable(context) && !forceShow) return
         RateDialog(context).also {
@@ -113,7 +114,7 @@ class RateInApp {
                 Log.e(TAG, "showDialogRateAndFeedback: onIgnore", )
                 onIgnoreRate()
             }
-        }.show()
+        }.show(withOutAnimation)
         alwaysIgnore()
     }
 

@@ -6,10 +6,10 @@ plugins {
 
 android {
     namespace = "com.core.rate"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -50,18 +50,18 @@ publishing {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("com.google.android.material:material:1.12.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
     /*animation*/
-    implementation ("com.airbnb.android:lottie:6.5.2")
+    implementation (libs.lottie)
 
-    implementation ("androidx.activity:activity-ktx:1.9.2")
-    implementation ("androidx.fragment:fragment-ktx:1.8.5")
-    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    implementation ("com.google.android.flexbox:flexbox:3.0.0")
-    implementation("com.google.android.play:review-ktx:2.0.2")
+    implementation (libs.androidx.activity.ktx)
+    implementation (libs.androidx.fragment.ktx)
+    implementation (libs.androidx.lifecycle.extensions)
+    implementation (libs.flexbox)
+    implementation(libs.review.ktx)
 }
